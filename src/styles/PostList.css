@@ -1,0 +1,157 @@
+/* PostList.css */
+.post-list-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.post-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  margin-bottom:20px;
+  border: 2px solid #00f7ff;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 300px;
+}
+
+.search-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.filter-container{
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.search-select{
+  border: 2px solid #00f7ff;
+  border-radius: 10px;
+  background-color: #0f0f0f;
+  color:#00f7ff;
+  font-size: 1rem;
+  padding: 10px;
+  cursor: pointer;
+
+}
+.reset-button{
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  width: 100%;
+}
+
+.post-card {
+  background-color: #0f0f0f;
+  border: 2px solid #00f7ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px; 
+  margin-bottom: 20px;
+  padding: 20px;;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.post-image {
+  padding: 15px;
+}
+
+.post-title {
+  font-size: 1rem;
+  width: 100%;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #00f7ff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.selected-post-container{
+  color:#0f0f0f;
+  padding: 40px;
+}
+
+.close-post-button{
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.post-image-container {\n  width: 100%;\n  height: 150px;\n  background-color: #ddd;\n  border-radius: 10px;\n  margin-bottom: 10px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  overflow: hidden;\n}\n\n.post-image-placeholder {\n  width: 100%;\n  height: 100%;\n  background-color: #ddd;\n}\n.post-body-preview {\n    font-size: 0.9rem;\n    color: #555;\n    line-height: 1.4;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    display: -webkit-box;\n    -webkit-line-clamp: 3;\n    -webkit-box-orient: vertical;\n}\n.empty-posts-message {\n    text-align: center;\n    color: red;\n    font-size: 1.2rem;\n    margin-top: 20px;\n}\n
+}
+.loading-container {\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n
+.error-container{\n    width: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n.load-more-button:hover{\n  background-color: #218838;\n}\n.load-more-button{\n    background-color: #28a745;\n    color: white;\n    border: none;\n    padding: 10px 20px;\n    border-radius: 10px;\n    cursor: pointer;\n    transition: background-color 0.3s ease;\n    font-size: 1rem;\n    margin-top: 20px;\n}\n
+.read-button:hover{\n  background-color: #0056b3;\n}\n.read-button {\n  background-color: #007bff;\n  color: white;\n  border: none;\n  padding: 8px 15px;\n  border-radius: 5px;\n  cursor: pointer;\n  transition: background-color 0.3s ease;\n  font-size: 0.9rem;\n}\n@media (max-width: 768px) {\n  .post-grid {\n    grid-template-columns: repeat(2, 1fr);\n  }\n}\n\n@media (max-width: 480px) {\n  .post-grid {\n    grid-template-columns: 1fr;\n  }\n}\n
+
+.read-button {
+  background-color: #00f7ff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.read-button:hover {
+  background-color: #00f7ff;
+}
+
+.load-more-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .post-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+@media (max-width: 480px) {
+  .post-grid {
+    grid-template-columns: 1fr; /* 1 column */
+  }
+}
