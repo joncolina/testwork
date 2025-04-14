@@ -6,7 +6,7 @@ INSTRUCCIONES DE EJECUCIÓN DE LA APP
 - Utilice: email: "test@example.com", password: "password123", o cualquier otro de los usuarios del archivo Mock.
 
 FILOSOFIA DE DESARROLLO Y COMPLICACIONES ENCONTRADAS.
-Se utilizo la filosofia de desarrollo Code Vibe para backend, y para el frontend se crearon los estilos e interfacez pensados en UX, UI.
+Se utilizo la filosofia de desarrollo Code Vibe para backend, y para el frontend se crearon los estilos e interfacez responsive pensados en UX, UI.
 
 TIEMPO DE DESARROLLO
 - 6 HORAS
